@@ -44,15 +44,30 @@ $(document).keydown(function(move) {
         $('#racer1').animate({left: "+=20px"}, 50);
         //console.log($('#racer1').css('left'));
         blueScore += 1; 
-        console.log(blueScore);
+        //console.log(blueScore);
+         if(blueScore == 35){
+         	$(this).off("keydown");
+         	$('#racer1').css("left", "0px");
+         	$('#racer2').css("left", "0px");
+         	blueScore = 0;
+         	redScore = 0;
+         	alert("BLUE WINS");
+         }
     }
-});
 
-$(document).keydown(function(move) {
     if(move.keyCode == 76) {
         $('#racer2').animate({left: "+=20px" }, 50);
         redScore+= 1;
         console.log(redScore);
+        console.log(blueScore);
+        if(redScore == 35){
+        	$(this).off("keydown");
+         	$('#racer1').css("left", "0px");
+         	$('#racer2').css("left", "0px");
+         	blueScore = 0;
+         	redScore = 0;
+         	alert("RED WINS");
+         }
     }
 });
 

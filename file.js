@@ -36,63 +36,14 @@ $().ready(function(){
 
 $(document).keydown(function(move) {
     if(move.keyCode == 65) {
-        $('#racer1').animate({marginLeft: "+=20px"}, 'fast');
+        $('#racer1').animate({left: "+=20px"}, 'fast');
     }
 });
 
 $(document).keydown(function(move) {
     if(move.keyCode == 76) {
-        $('#racer2').animate({marginLeft: "+=20px" }, 'fast');
+        $('#racer2').animate({left: "+=20px" }, 'fast');
     }
 });
-
-
-
-
-
-
-
-// var pressed = false;
-// $(document).keydown(function(e) {
-//     if(!pressed){
-//         width = $(this).width();
-//         height = $(this).height();
-//         switch (e.which) {
-//             case 37:
-//                 $('#racer1').stop().animate({
-//                     left: '-=' + width
-//                 }, 2000); //left arrow key
-//                 break;
-//             case 38:
-//                 $('#racer1').stop().animate({
-//                     top: '-=' + height
-//                 }, 2000); //up arrow key
-//                 break;
-//             case 39:
-//                 $('#racer1').stop().animate({
-//                     left: '+=' + width
-//                 }, 2000); //right arrow key
-//                 break;
-//             case 40:
-//                 $('#racer1').stop().animate({
-//                     top: '+=' + height
-//                 }, 2000); //bottom arrow key
-//                 break;
-//         }
-//     }
-//     pressed = true;
-// }).keyup(function(){
-//     $('#racer1').stop();
-//     pressed = false;
-// });
-
-
-
-
-
-
-
-
-
 
 	});

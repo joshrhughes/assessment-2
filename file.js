@@ -32,18 +32,33 @@
 console.log("hello");
 
 $().ready(function(){
+//Code Here
 
 
+//Code for racer movement
+
+var blueScore = 0;
+var redScore = 0;
 $(document).keydown(function(move) {
     if(move.keyCode == 65) {
-        $('#racer1').animate({left: "+=20px"}, 'fast');
+        $('#racer1').animate({left: "+=20px"}, 50);
+        //console.log($('#racer1').css('left'));
+        blueScore += 1; 
+        console.log(blueScore);
     }
 });
 
 $(document).keydown(function(move) {
     if(move.keyCode == 76) {
-        $('#racer2').animate({left: "+=20px" }, 'fast');
+        $('#racer2').animate({left: "+=20px" }, 50);
+        redScore+= 1;
+        console.log(redScore);
     }
 });
 
-	});
+
+//Create logic that if racer css left value is >= 680px
+
+	});//End
+
+

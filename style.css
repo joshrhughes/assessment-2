@@ -15,8 +15,10 @@
 
 #racer1{
 	background: blue;
+	margin: 100px 0 0 10px;
 }
 
 #racer2{
 	background: red;
+	margin: 250px 0 0 10px;
 }

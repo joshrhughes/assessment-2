@@ -1,7 +1,7 @@
 //Requirements
 
-// Your game should have two pages: a landing page and a game page
-// Include separate HTML, CSS, JavaScript files
+// Your game should have two pages: a landing page and a game page *
+// Include separate HTML, CSS, JavaScript files *
 // Choose an existing landing page on the web; screen shot the landing page, and replicate its design to create a separate game landing page that links to your game*
 // Style your landing page and game page with class-based CSS
 // Include a media query for a tablet to make your pages responsive
@@ -36,36 +36,37 @@ $().ready(function(){
 
 
 //Code for racer movement
-
+var player1 = {score:0, color:"blue"};
+var player2 = {score:0, color:"red"};
 var blueScore = 0;
 var redScore = 0;
-$(document).keydown(function(move) {
-    if(move.keyCode == 65) {
+$(document).keyup(function(move) {
+    if(move.keyCode == 65) { 
         $('#racer1').animate({left: "+=20px"}, 50);
         //console.log($('#racer1').css('left'));
-        blueScore += 1; 
+        player1.score += 1; 
         //console.log(blueScore);
-         if(blueScore == 35){
-         	$(this).off("keydown");
+         if(player1.score == 35){
+         	$(this).off("keyup");
          	$('#racer1').css("left", "0px");
          	$('#racer2').css("left", "0px");
-         	blueScore = 0;
-         	redScore = 0;
+         	player1.score = 0;
+         	player2.score = 0;
          	alert("BLUE WINS");
          }
     }
 
     if(move.keyCode == 76) {
         $('#racer2').animate({left: "+=20px" }, 50);
-        redScore+= 1;
-        console.log(redScore);
-        console.log(blueScore);
-        if(redScore == 35){
-        	$(this).off("keydown");
+        player2.score += 1;
+        console.log(player2.score);
+        console.log(player1.score);
+        if(player2.score == 35){
+        	$(this).off("keyup");
          	$('#racer1').css("left", "0px");
          	$('#racer2').css("left", "0px");
-         	blueScore = 0;
-         	redScore = 0;
+         	player1.score = 0;
+         	player2.score = 0;
          	alert("RED WINS");
          }
     }

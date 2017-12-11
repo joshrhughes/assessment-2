@@ -1,10 +1,29 @@
 
+body{
+	background: #E6E8E6;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1{
+	letter-spacing: 10px;
+}
+
+h4{
+	color: #E6E8E6;
+}
+/*------*/
+
+/*Game Board*/
+
 #gameArea{
 	height: 300px;
 	width: 800px;
-	border: 3px solid #000000;";
+	border: 3px solid #080708;
 }
+/*-----*/
 
+/*Racers*/
 .racer{
 	height: 100px;
 	width: 100px;
@@ -14,11 +33,25 @@
 }
 
 #racer1{
-	background: blue;
+	background: #3772FF;
 	margin: 200px 0 0 10px;
 }
 
 #racer2{
-	background: red;
+	background: #DF2935;
 	margin: 340px 0 0 10px;
+}
+
+/*------*/
+
+/*For tablets*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  {
+
+  	body{
+  		background: #FDCA40;
+  	}
+
 }

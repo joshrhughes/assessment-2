@@ -5,9 +5,9 @@
 // Choose an existing landing page on the web; screen shot the landing page, and replicate its design to create a separate game landing page that links to your game*
 // Style your landing page and game page with class-based CSS
 // Include a media query for a tablet to make your pages responsive
-// Your game page must have at least two player objects
-// Your game must have a clear win condition
-// Comment your code appropriately
+// Your game page must have at least two player objects*
+// Your game must have a clear win condition*
+// Comment your code appropriately*
 // Adhere to the AirBnB style guide for writing your JavaScript
 // Adhere to the Google style guide for writing your HTML/CSS
 // * This does NOT mean copy-and-paste, you must work from the screen shot, not the code.
